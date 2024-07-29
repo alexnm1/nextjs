@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.sankhya.labs.rh",
+      "sha256_cert_fingerprints": [
+        "AD:97:B9:6E:48:A5:1F:39:F6:D3:BB:06:F2:73:1A:2E:50:56:4D:16:4A:E9:CA:D3:F7:38:33:17:78:02:ED:B8"
+      ]
+    }
+  }
+]
