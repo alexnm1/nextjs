@@ -1,19 +1,18 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-const Home: React.FC = () => {
+const Page = () => {
+  const router = useRouter();
+
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const vendor = navigator.vendor;
+    // Verifique as condições para o redirecionamento
+    const shouldRedirect = true; // Sua lógica aqui
 
-      if (vendor.includes('Apple')) {
-        // Se o vendor for Apple (Safari)
-        window.location.href = 'https://apps.apple.com/br/app/sankhya-rh/id123456789';
-      } else {
-        // Se não for Apple, redireciona para Google Play
-        window.location.href = 'https://play.google.com/store/apps/details?id=br.com.sankhya.labs.rh&hl=pt_BR';
-      }
+    if (shouldRedirect) {
+      // Redirecionar para uma página específica
+      router.push('/nova-pagina');
     }
-  }, []);
+  }, [router]);
 
   return (
     <div>
@@ -22,4 +21,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Page;
