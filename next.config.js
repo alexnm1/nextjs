@@ -7,7 +7,7 @@ module.exports = {
           {
             type: 'header',
             key: 'user-agent',
-            value: '((?!CriOS).)*Safari.*', // Exclui Chrome (CriOS) no iOS e foca apenas no Safari
+            value: '.*Safari.*(Macintosh|iPhone|iPad).*', // Exclui Chrome (CriOS) no iOS e foca apenas no Safari
           }
         ],
         destination: 'https://apps.apple.com/br/app/sankhya-rh/id123456789', // Link para Apple Store
