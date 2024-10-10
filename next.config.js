@@ -8,7 +8,7 @@ module.exports = {
           {
             type: 'header',
             key: 'user-agent',
-            value: '(.*iPhone|.*iPad)', // Regex para detectar iOS
+            value: '(.*iPhone|.*iPad|.*Macintosh)', // Regex para detectar iOS
           },
         ],
         destination: 'https://apps.apple.com/br/app/sankhya-pessoas/id1317417474',
